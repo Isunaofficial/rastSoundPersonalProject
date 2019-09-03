@@ -324,7 +324,7 @@ rast
     .setValue('@joinPass', 'justATest2')
     .setValue('@joinPassConfirm', 'justATest2')
     },     
-"Can User Add An Item To Their Cart": browser => {
+"Can User Add and Remove An Item To and From Their Cart": browser => {
 rast
     .moveToElement('@mouseOverProductsNavBar', 1, 1)
     .productFind1()
