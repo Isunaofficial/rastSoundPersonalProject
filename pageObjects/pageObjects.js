@@ -200,8 +200,16 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         // PRODUCTS
+        indianFlute: {
+            selector: ('(//a[@href="https://rastsound.com/downloads/indian-flute/"])[2]'),
+            locateStrategy: 'xpath'
+        },
+        indianFluteHeader: {
+            selector: ('(//h2[@class="elementor-heading-title elementor-size-default"])[1]'), 
+            locateStrategy: 'xpath'
+        },
         vosContemp: {
-            selector: ('(//h3[@class="edd_download_title"])[1]'),
+            selector: ('(//a[@href="https://rastsound.com/downloads/vos-contemporary/"])[2]'),
             locateStrategy: 'xpath'
         },
         vosContempHeader: {
@@ -209,7 +217,7 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         blend: {
-            selector: ('(//h3[@class="edd_download_title"])[2]'),
+            selector: ('(//a[@href="https://rastsound.com/downloads/blend/"])[2]'),
             locateStrategy: 'xpath'
         },
         blendHeader: {
@@ -217,7 +225,7 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         atlas: {
-            selector: ('(//h3[@class="edd_download_title"])[3]'),
+            selector: ('(//a[@href="https://rastsound.com/downloads/atlas/"])[2]'),
             locateStrategy: 'xpath'
         },
         atlasHeader: {
@@ -225,7 +233,7 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         mottAndWhite: {
-            selector: ('(//h3[@class="edd_download_title"])[4]'),
+            selector: ('(//a[@href="https://rastsound.com/downloads/mott-and-white/"])[2]'),
             locateStrategy: 'xpath'
         },
         mwHeader: {
@@ -233,7 +241,7 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         asianColours: {
-            selector: ('(//h3[@class="edd_download_title"])[5]'),
+            selector: ('(//a[@href="https://rastsound.com/downloads/asian-colours/"])[2]'),
             locateStrategy: 'xpath'
         },
         asianColourHeader: {
@@ -473,6 +481,13 @@ module.exports = {
             locateStrategy: 'xpath'
         },
     },
+    var: indianFlute = [
+        {
+            product: '@indianFlute',
+            header: '@indianFluteHeader',
+            productName: 'Indian Flute',
+        }
+    ],
     var: vos = [
         {
             product: '@vosContemp',
